@@ -4,7 +4,7 @@ let Customer = require('./models/customer');
 let bodyparser = require('body-parser');
 let DB = require('./db/monggose');
 let jwt = require('jsonwebtoken');
-let port = 3000;
+let port = process.env.PORT ||  3000;
 let bcrypt = require('bcrypt');
 require('dotenv').config();
 const customer = require('./models/customer');
